@@ -23,12 +23,13 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/2 space-y-12 md:pt-24">
             <div className="space-y-6 md:space-y-8 reveal-on-scroll">
               <p className="text-base md:text-xl font-light text-gray-300 leading-relaxed">
-                <strong className="text-white font-normal">ROOV non è un festival.</strong> È un'occupazione sonora temporanea. 
-                Attiviamo spazi, per trasformarli in casse di risonanza.
+                <strong className="text-white font-normal">ROOV non è un festival.</strong><br />
+                È un'occupazione sonora-culturale temporanea.<br />
+                Attivare spazi, per trasformarli in casse di risonanza.
               </p>
               <p className="text-base md:text-xl font-light text-gray-400 leading-relaxed">
-                Nessun palco, nessuna barriera. 
-                Solo architettura e frequenze.
+                Nessun palco, nessuna barriera.<br />
+                Pura architettura e frequenza.
               </p>
             </div>
 

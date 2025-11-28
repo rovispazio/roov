@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 opacity-40 md:opacity-50 grayscale contrast-125"
           >
             {/* Cinematic Drone/Atmosphere Loop Placeholder */}
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-background-1610-large.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dkmc21jp3/video/upload/v1764337137/ROOV_gma6cl.mp4" type="video/mp4" />
           </video>
           
           {/* Animated Gradient Overlay */}

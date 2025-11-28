@@ -7,7 +7,7 @@ const events = [
     subtitle: 'CASTELLO BRANCACCIO',
     date: '17.05',
     type: 'ACT I',
-    image: 'https://images.unsplash.com/photo-1533669955142-6a73332af4db?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/dkmc21jp3/image/upload/v1764087490/Roviano-1-1536x864_hjdoge.png',
     status: 'INCOMING'
   },
   {
@@ -16,7 +16,7 @@ const events = [
     subtitle: 'SCOTONICO',
     date: '14.06',
     type: 'ACT II',
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/dkmc21jp3/image/upload/v1764338709/257817c63b10486d511f9e86a7d60616_zyy5sf.jpg',
     status: 'INCOMING'
   },
   {
@@ -25,7 +25,7 @@ const events = [
     subtitle: 'EX OMNI',
     date: '12.07',
     type: 'ACT III',
-    image: 'https://images.unsplash.com/photo-1514525253440-b39345208668?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/dkmc21jp3/image/upload/v1764338796/Ex_monastero_di_Roviano_II_qzetks.jpg',
     status: 'INCOMING'
   }
 ];
@@ -36,15 +36,17 @@ const Events: React.FC = () => {
   return (
     <section id="events" className="py-20 md:py-32 bg-roov-black relative overflow-hidden min-h-[80vh] flex items-center">
       {/* Dynamic Background - Hidden on mobile to save data/battery, visible md+ */}
-      <div className="hidden md:block absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out opacity-30 pointer-events-none">
+      <div className="hidden md:block absolute inset-0 z-0 pointer-events-none">
         {activeImage && (
-          <img 
-            src={activeImage} 
-            alt="Background" 
-            className="w-full h-full object-cover filter blur-sm scale-105 transition-transform duration-[10s]" 
-          />
+          <>
+            <img 
+              src={activeImage} 
+              alt="Background" 
+              className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[10s] opacity-60" 
+            />
+            <div className="absolute inset-0 bg-black/60"></div>
+          </>
         )}
-        <div className="absolute inset-0 bg-black/80"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
